@@ -80,9 +80,15 @@ a {
   align-self: flex-start;
 }
 
-a:hover {
+@media (prefers-reduced-motion: no-preference) {
+  .transition-color {
+    transition: color 0.15s ease-in;
+  }
+}
+
+a:hover,
+a:active {
   color: var(--Yellow-Color);
-  transition: color 0.15s ease-in;
 }
 
 .summary {
