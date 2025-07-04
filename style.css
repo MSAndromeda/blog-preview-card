@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --Yellow-Color: hsl(47, 88%, 63%);
+  --White: hsl(0, 0%, 100%);
+  --Gray-500: hsl(0, 0%, 42%);
+  --Gray-950: hsl(0, 0%, 7%);
+  --Black: #000000;
+  --text-preset-1: clamp(1.25rem, 1.666vw, 1.5rem);
+  --text-preset-2: clamp(0.875rem, 1.11vw, 1rem);
+  --text-preset-3: clamp(0.75rem, 0.972vw, 0.875rem);
+  --text-preset-3-author: clamp(0.875rem, 3.73vw, 0.875rem);
+  --Font-Weight-500: 500;
+  --Font-Weight-800: 800;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Yellow-Color);
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "figtree", sans-serif;
+  color: var(--Gray-950);
+  font-weight: var(--Font-Weight-800);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-inline: 1.5rem;
+  background-color: var(--White);
+  padding: 1.5rem;
+  max-width: 24rem;
+  box-shadow: 0.5rem 0.5rem var(--Black);
+  border: 0.0625rem solid var(--Black);
+  border-radius: 1.25rem;
+}
+
+.articleImg {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.625rem;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.tag {
+  background-color: var(--Yellow-Color);
+  font-size: var(--text-preset-3);
+  padding-block: 0.25rem;
+  padding-inline: 0.75rem;
+  align-self: flex-start;
+  border-radius: 0.25rem;
+}
+
+time {
+  font-weight: var(--Font-Weight-500);
+  font-size: var(--text-preset-3);
+}
+
+h1 {
+  font-size: var(--text-preset-1);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  align-self: flex-start;
+}
+
+a:hover {
+  color: var(--Yellow-Color);
+  transition: color 0.15s ease-in;
+}
+
+.summary {
+  font-weight: var(--Font-Weight-500);
+  font-size: var(--text-preset-2);
+  color: var(--Gray-500);
+}
+
+address {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.authorImg {
+  width: 2rem;
+  height: auto;
+}
+
+.authorName {
+  font-size: var(--text-preset-3-author);
+}
